@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="Robson"/>
+        <meta name="copyright" content="Robson"/>
+        <meta name="description" content="Creemos una aplicación web simple en Python, usando el marco Flask, que nos permitirá construir la interfaz y la lógica para clasificar triángulos. La idea es que el usuario ingrese las medidas de los tres lados del triángulo, y la aplicación le devuelva el tipo de triángulo (equilátero, isósceles o escaleno).">
+        <meta name="keywords" content="cursos de tecnología, tecnología de la información, programación, desarrollo web, análisis de datos, aprendizaje en línea">
+        <meta name="locality" content="Buenos Aires">
+        <meta name="region" content="CABA">
+        <meta name="country-name" content="Argentina">
+        <title>Resultado</title>
+        <style>
+            /* Estilos generales */
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            /* Contenedor principal */
+            .container {
+                background-color: #ffffff;
+                padding: 30px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                width: 90%;
+                max-width: 500px;
+                text-align: center;
+            }
+
+            /* Título */
+            h1 {
+                color: #333333;
+                margin-bottom: 20px;
+            }
+
+            /* Resultado */
+            .resultado {
+                margin-top: 20px;
+                padding: 20px;
+                background-color: #e2e3e5;
+                border-left: 5px solid #28a745;
+                border-radius: 4px;
+                color: #333333;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            /* Botón para volver */
+            .volver {
+                margin-top: 30px;
+                padding: 10px 20px;
+                background-color: #007bff;
+                color: #ffffff;
+                border: none;
+                border-radius: 4px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            .volver:hover {
+                background-color: #0056b3;
+            }
+
+            /* Responsividad */
+            @media (max-width: 600px) {
+                .container {
+                    padding: 20px;
+                }
+
+                h1 {
+                    font-size: 24px;
+                }
+
+                .resultado {
+                    font-size: 16px;
+                    padding: 15px;
+                }
+
+                .volver {
+                    font-size: 14px;
+                    padding: 8px 16px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Resultado</h1>
+            <div class="resultado">
+                <p>Triángulo {{ resultado }}</p>
+            </div>
+            <a href="/" class="volver">Volver a Clasificar</a>
+        </div>
+    </body>
+</html>
